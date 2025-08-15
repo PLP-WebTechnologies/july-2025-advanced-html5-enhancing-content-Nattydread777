@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Content and Forms</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Our Product Showcase</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Product Features</h2>
+            <p>Our product comes with a range of features designed to make your life easier.</p>
+            <ul>
+                <li>Easy to use interface</li>
+                <li>Comprehensive data analytics</li>
+                <li>24/7 customer support</li>
+            </ul>
+
+            <h2>Getting Started</h2>
+            <p>Follow these simple steps to set up your account:</p>
+            <ol>
+                <li>Register on our website.</li>
+                <li>Verify your email address.</li>
+                <li>Log in and start your free trial!</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Pricing Tiers</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tier</th>
+                        <th>Price</th>
+                        <th>Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic</td>
+                        <td>$9.99/mo</td>
+                        <td>Limited access, standard support</td>
+                    </tr>
+                    <tr>
+                        <td>Pro</td>
+                        <td>$29.99/mo</td>
+                        <td>Full access, priority support</td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise</td>
+                        <td>Custom</td>
+                        <td>All features, dedicated account manager</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Media Showcase</h2>
+            <p>Check out our product in action!</p>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop"
+                    alt="A person working on a laptop, showing a screenshot of the product interface."
+                    style="width:100%; max-width:600px;">
+                <figcaption>Our clean and intuitive user interface.</figcaption>
+            </figure>
+
+            <h3>Listen to our product jingle</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Watch our promotional video</h3>
+            <video width="600" controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Contact and Registration Form</h2>
+            <form action="#" method="post" id="registration-form">
+
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <p>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full_name" placeholder="John Doe" required
+                            autocomplete="name">
+                    </p>
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email_address" placeholder="john.doe@example.com" required
+                            autocomplete="email">
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" minlength="8" required>
+                        <small>Must be at least 8 characters long.</small>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <p>
+                        <label for="birthdate">Date of Birth:</label>
+                        <input type="date" id="birthdate" name="birthdate">
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone_number" placeholder="123-456-7890"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <small>Format: 123-456-7890</small>
+                    </p>
+                    <p>
+                        <label for="newsletter">Sign up for our newsletter:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    </p>
+                    <p>
+                        <label for="product-preference">Favorite Product Category:</label>
+                        <select id="product-preference" name="product_preference">
+                            <option value="">--Please choose an option--</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="books">Books</option>
+                            <option value="clothing">Clothing</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Leave us a message..."></textarea>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Submit Form</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
